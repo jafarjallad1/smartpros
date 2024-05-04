@@ -253,16 +253,23 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 /* Media queries for mobile */
 
 @media screen and (max-width: 498px){
+    .left{
+        display: none;
+    }
+    .login_container{
+        justify-content: unset;
+        padding-top: 24px;
+    }
 .sgin_form{
-    gap: 16px;
+    gap: 8px;
 }
 
 .sgin_form input{
-    width: 400px;
+    width: 360px;
 }
 
 .sgin_form button{
-    width: 400px;
+    width: 360px;
 }
 
 
@@ -283,5 +290,19 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     
     width: 100%;
     
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 40px;
+}
+
+.welcome p{
+    color: #bebdbd;
+    font-size: 16px;
+}
+.right_end{
+    position: unset;
 }
 }

@@ -25,6 +25,7 @@ h1{
 
 .cat_row{
     display: flex;
+    
     gap : 24px;
     justify-content: center;
     align-items: center;
