@@ -11,6 +11,8 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
@@ -38,7 +40,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                       
+
 
                     </div>
 
@@ -59,7 +61,7 @@
 
             <div class="login_container">
                 <div class="login_form">
-                    <form  class="sgin_form" name="login"  onsubmit="logiin(event)">
+                    <form class="sgin_form" name="login" onsubmit="logiin(event)">
 
                         <div class="info">
                             <div class="welcome">
@@ -70,10 +72,10 @@
                             <input type="password" id="password" placeholder="enter your password" />
                         </div>
                         <button type="submit" id="login">Sign in</button>
-                       <div class="remember">
-                        <input type="checkbox" id="check"/>
-                        <label for="remember">Remember me</label>
-                       </div>
+                        <div class="remember">
+                            <input type="checkbox" id="check" />
+                            <label for="remember">Remember me</label>
+                        </div>
                     </form>
                     <span class="or">Or</span>
                     <div class="sign_methods">
@@ -116,6 +118,8 @@
 
 
 
+                <script src="sweetalert2.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

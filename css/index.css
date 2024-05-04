@@ -230,3 +230,58 @@ border-radius: 8px;
 }
 
 
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: var(--orange);
+    color: #f3f3f3;
+    border: none;
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    .login {
+        flex-direction: column-reverse; 
+    }
+    .left {
+        order: 2;
+    }
+    .right {
+        order: 1; 
+    }
+}
+
+/* Media queries for mobile */
+
+@media screen and (max-width: 498px){
+.sgin_form{
+    gap: 16px;
+}
+
+.sgin_form input{
+    width: 400px;
+}
+
+.sgin_form button{
+    width: 400px;
+}
+
+
+
+.remember input{
+    width: 16px;
+    height: 16px;
+}
+
+.sign_methods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.sign_methods .method{
+    
+    width: 100%;
+    
+}
+}
