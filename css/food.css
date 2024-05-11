@@ -21,6 +21,7 @@
 h1{
     display: flex;
     align-self: flex-start;
+    font-size: 24px;
 }
 
 .cat_row{
@@ -38,22 +39,20 @@ h1{
     gap: 48px;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 30%;
     height: 40vh;
     background-color: #fcfcfc;
     border-radius: 16px;
     transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    margin: 16px;
-    
     padding: 16px 24px;
 }
 
 .cat:hover{
     background-color: #ffc400; /* Change background color on hover */
 }
-img{
+.cat img{
    
     width: 100%;
     height: auto;
@@ -65,6 +64,414 @@ img{
     margin: 0;
     color: #242424;
 }
+/*dsadasdasdasd*/
+
+.cat-options-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+.head{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    padding-left: 32px;
+    padding-top: 24px;
+}
+.order{
+    padding: 8px 8px;
+    background-color: #eeeeee;
+    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-self: flex-end;
+    
+}
+.order svg{
+    height: 24px;
+    width: 24px;
+}
+.back {
+    padding: 8px 8px;
+    background-color: #eeeeee;
+    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.back svg{
+    height: 24px;
+    width: 24px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.title h1{
+    font-size: 24px;
+    font-weight: 400;
+    
+    color: #242424;
+}
+.title-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-icon img{
+    
+    width:100%;
+}
+.options-container{
+    display: flex;
+    flex-wrap: wrap;
+
+
+    gap: 24px;
+   column-gap: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px ;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 40vh;
+    background-color: #fcfcfc;
+    border-radius: 16px;
+    transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 16px 8px;
+}
+.option:hover{
+    background-color: #ffc400; /* Change background color on hover
+     */
+}
+
+
+
+.option img{
+    width: 70%;
+    height: auto;
+   aspect-ratio: 180/120;
+   object-fit: cover;
+}
+.option h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.option .waight{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #a7a7a7;
+}
+
+.option .price{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffc400;
+}
+
+/* oreder totals */
+.orders{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    align-items: center;
+    width: 30%;
+    padding: 16px 0px;
+    background-color: rgb(248, 247, 246);
+    height: 100vh;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: #a7a7a7 solid 1px;
+    overflow-y: auto;
+}
+.order-total{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
+   border-bottom: 1px solid rgb(240, 239, 239);
+    cursor: pointer;
+    padding: 8px 16px;
+}
+.order-total img{
+   width: 40%;
+}
+.order-total .meal-info-name{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #242424;
+    text-align: center;
+}
+
+.order-total .meal-info{
+    display: flex;
+    
+    gap:48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-total .meal-info span{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #ffc400;
+}
+.orders .total-price{
+    padding: 16px 8px;
+    background-color: #ffc400;
+    border-radius: 16px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+   
+    bottom: 8px;
+    z-index: 3;
+
+    
+}
+
+.orders .total-price span{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    color: #242424;
+}
+.overlay-total {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+    z-index: 9999; /* تأكد من أن الغطاء فوق كل شيء آخر */
+    display:none; 
+    justify-content: center;
+    align-items: center;
+  }
+  .order-close{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        position: fixed;
+        top: 16px;
+       right: 16px;
+        font-size: 32px;
+        font-weight: 700;
+        color: #242424;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
+       
+        background-color: #eeeeee;
+  }
+  .order-close:hover{
+    background-color: #ffc400; /* Change background color on hover
+     */
+  }
+  .order-close svg{
+    height: 24px;
+    width: 24px;
+}
+
+
+
+/*apply order*/
+
+.apply-order{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 16px 24px;
+    background-color: rgb(248, 247, 246);
+    height: 100vh;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.apply-order .meal{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.apply-order .meal .meal-img{
+    width: 80%;
+    height: auto;
+   aspect-ratio: 180/120;
+}
+
+.apply-order .meal .meal-img img{
+  width: 100%;
+
+}
+.apply-order .meal .meal-name{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #242424;
+    text-align: center;
+}
+.apply-order .meal .meal-waight{
+    font-size: 16px;
+    color: #a7a7a7;
+    }
+    .apply-order .meal .meal-price{
+        font-size: 32px;
+        font-weight:500;
+        margin: 0;
+        color: #ffc400;
+    }
+    .inc-dec{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        }
+    .apply-order .plus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: #eeeeee;
+        border-radius: 12px;
+        cursor: pointer;
+        
+    }
+    .apply-order .minus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: #eeeeee;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    .apply-order .plus svg{
+       
+       width: 24px;
+       height: 24px;
+    }
+
+    .apply-order .minus svg{
+       
+        width: 24px;
+        height: 24px;
+     }
+
+
+     .quant{
+        font-size: 24px;
+        font-weight: 600;
+     }
+
+     .apply-order button{
+        width: 90%;
+        padding: 16px;
+        background-color: #ffc400;
+        border-radius: 16px;
+        color: #242424;
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
+        border: none;
+        margin-top: 160px;
+        transition: transform 0.3s ease-in-out;
+        
+     }
+
+     .apply-order button:hover {
+        
+        transform: scale(1.1); 
+    }
+     .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+        z-index: 9999; /* تأكد من أن الغطاء فوق كل شيء آخر */
+        display:none; 
+        justify-content: center;
+        align-items: center;
+      }
+      .close{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        position: absolute;
+        top: 16px;
+       left: 24px;
+        font-size: 32px;
+        font-weight: 700;
+        color: #242424;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
+       
+        background-color: #eeeeee;
+ 
+      }
+      .close svg{
+        width: 24px;
+        height: 24px;
+      }
+      .close:hover {
+        background-color: #ffc400;
+      }
+
 
 @media screen and (max-width: 1200px){
     h1{
@@ -76,8 +483,26 @@ img{
     margin: 0;
     color: #242424;
    }
+
+   .option h2{
+    font-size: 24px;
+ 
+   }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (min-width : 768px)and (max-width: 1024px) {
+
+    ul li{
+        width: 100%;
+        padding: 16px;
+    }
+    .cat{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px){
+
 
     h1{
         font-size: 20px;
@@ -93,6 +518,12 @@ img{
     font-weight: 700;
     margin: 0;
     color: #242424;
+   }
+   .option h2{
+    font-size: 16px;
+   }
+   .option .price{
+    font-size: 16px;
    }
 }
 @media screen and (max-width: 480px){
@@ -116,5 +547,95 @@ img{
     .cat{
         width: 100%;
     }
+    .option{
+        width: 100%;
+    }
+    .option h2{
+        font-size: 24px;
+       }
+       .option .price{
+        font-size: 24px;
+       }
 
+       /* apply and total*/
+       .apply-order{
+        justify-content: unset;
+        padding-top: 80px;
+       }
+
+       .apply-order .meal .meal-img{
+        width: 100%;
+        height: auto;
+       }
+       .apply-order .meal .meal-img img{
+          width: 100%;
+       }
+       .apply-order .meal .meal-name{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        color: #242424;
+       }
+       .apply-order .meal .meal-waight{
+        font-size: 12px;
+        color: #a7a7a7;
+       }
+       .apply-order .meal .meal-price{
+        font-size: 29px;
+        font-weight:500;
+        margin: 0;
+        color: #ffc400;
+       }
+       .inc-dec{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        }
+        
+        .quant{
+            font-size: 16px;
+            font-weight: 600;
+ 
+        }
+        .apply-order .plus{
+            padding: 6px 10px;
+        }
+        .apply-order .minus{
+            padding: 6px 10px;
+        }
+        .apply-order .plus svg{
+            width: 18px;
+            height: 18px;
+        }
+        .apply-order .minus svg{
+            width: 18px;
+            height: 18px;
+         }
+        .apply-order button{
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+       /* total */
+       .order-total img{
+        width: 100%;
+        height: auto;
+       }
+       .order-total .meal-info-name{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        color: #242424;
+       }
+       .order-total .meal-info{
+        gap: 16px;
+       }
+       .order-total .meal-info span{
+        font-size: 12px;
+       }
+       
+
+       .orders .total-price span{
+        font-size: 16px;
+       }
 }

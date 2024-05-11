@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/food.css">
 </head>
+
 <body>
     <div class="food_container">
         <h1>categories</h1>
         <div class="cat_row ">
-            <div class="cat ">
+            <div class="cat " onclick="catOptionsShow()">
                 <img src="./css/img/147679-burger-non-veg-photos-king-hq-image-free.png" alt="">
                 <span>Burger</span>
             </div>
-            <div class="cat ">
+            <div class="cat " onclick="catOptionsShow()">
                 <img src="./css/img/12-2-drink-png-5.png" alt="">
                 <span>cola</span>
             </div>
@@ -38,5 +40,66 @@
             </div>
         </div>
     </div>
+    <div class="overlay-total">
+        <div class="orders">
+            <div class="order-close" onclick="hidetotal()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/>
+                </svg>
+            </div>
+            <div class="all-orders">
+                
+            </div>
+            <div class="total-price">
+                <span>total : 12$</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="apply-order">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/>
+                </svg>
+            </div>
+
+            <div class="meal">
+               
+            </div>
+            <div class="inc-dec">
+                <div class="plus">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                    </svg>
+                </div>
+                <span class="quant"></span>
+                <div class="minus">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </div>
+            </div>
+            <button>apply order</button>
+
+        </div>
+    </div>
+    <div class="cat-options-container">
+        <div class="head">
+
+
+
+        </div>
+        <div class="options-container col-12">
+
+        </div>
+
+    </div>
+    <script src="./js/food.js"></script>
 </body>
+
 </html>

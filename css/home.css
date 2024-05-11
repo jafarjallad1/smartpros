@@ -22,23 +22,22 @@ aside{
     padding-top: 16px;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     height: 10vh;
-    
-    
-   
+    padding-bottom: 8px;
     justify-content: center;
     align-items: center;
 }
 
 .logo_container{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
    
 }
 .pos{
     margin-top: unset !important ; 
      margin-bottom: 0 !important; 
+     font-size: 24px;
     
 }
 .logo_container svg{
@@ -66,16 +65,13 @@ ul li {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     align-items: center;
     justify-content: flex-start;
     width: 90%;
     padding: 16px 24px;
     border-radius: 16px;
     cursor: pointer;
-    
-   
-   
     transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth effect */
    
 }
@@ -93,7 +89,7 @@ ul li:hover {
 }
 
 ul li h3{
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     font-weight: 400;
 }
@@ -163,6 +159,7 @@ ul li svg{
 }
 .endaside{
     text-align: center;
+    font-size: 12px;
 }
 
 
@@ -216,7 +213,13 @@ ul li svg{
          height: 40px;
          font-size: 14px;
      }
+     ul li{
+        padding: 16px ;
+        width: 100%;
+     }
 }
+
+
 
 
 
@@ -292,6 +295,9 @@ ul li svg{
 }
 
 @media screen and (max-width: 560px){
+    ul li{
+        width: unset ;
+    }
     .logo{
         margin-top: 0px;
     }
@@ -333,7 +339,7 @@ ul li svg{
      }
 
 .endaside{
-    font-size: 12px;
+    font-size: 8px;
     text-align: center;
 }
 }
